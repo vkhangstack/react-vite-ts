@@ -14,6 +14,8 @@ react-vi-ts
 
 > React-router-dom: **^6.6.1**
 
+> UI Framework AntD: **^5+**
+
 > Vite: **^4+**
 
 ```js
