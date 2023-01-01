@@ -1,22 +1,24 @@
 {
-  "name": "react-vite-tempale",
+  "name": "react-vite-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "homepage": ".",
   "type": "module",
+  "author": {
+    "email": "phamvankhang.tvi@gmail.com",
+    "name": "Pham Van Khang",
+    "url": "https://phamvankhang.name.vn"
+  },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8000",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --port 8000"
   },
   "dependencies": {
     "antd": "^5.1.2",
-    "localforage": "^1.10.0",
-    "match-sorter": "^6.3.1",
-    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.1",
-    "sort-by": "^1.2.0"
+    "react-router-dom": "^6.6.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
@@ -25,9 +27,8 @@
     "@vitejs/plugin-react-swc": "^3.0.0",
     "node-sass": "^8.0.0",
     "sass": "^1.57.1",
-    "sass-loader": "^13.2.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
-    "vite-plugin-sass-dts": "^1.2.9"
+    "vite-plugin-singlefile": "^0.13.2"
   }
 }
