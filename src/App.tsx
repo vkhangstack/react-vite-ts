@@ -1,11 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import khangLogo from './assets/k.png'
-import './App.scss'
-
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from './assets/vite.svg';
+import khangLogo from './assets/k.png';
+import './App.scss';
+import { useNavigate } from 'react-router-dom';
+import { Button } from 'antd';
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const navigate = useNavigate();
+
+  const toLogin = () => {
+    return navigate('/login');
+  };
+  const toLContact = () => {
+    return navigate('/contact');
+  };
 
   return (
     <div className="App">
@@ -21,21 +30,23 @@ function App() {
         </a>
       </div>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <Button type="dashed" onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
-        <p>
-          Build template by Pham Van Khang
-        </p>
-        <p>
-          {new Date().toLocaleString() + ''}
-        </p>
+        </Button>
+        <Button type="text" onClick={toLContact}>
+          Contact
+        </Button>
+        <Button type="primary" onClick={toLogin}>
+          Login
+        </Button>
+        <p>Build template by Pham Van Khang</p>
+        <p>{new Date().toLocaleDateString() + ''}</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
