@@ -7,9 +7,10 @@ interface LoginProps {
   password: string;
 }
 
-const Login: FunctionComponent<LoginProps> = () => {
+const Login: FunctionComponent<LoginProps> = (props) => {
   const onFinish = (values: any) => {
     message.info(`Hello: ${values.username}`);
+    message.info(`Hello: ${props.username}`);
   };
 
   return (
