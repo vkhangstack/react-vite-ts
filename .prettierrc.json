@@ -1,11 +1,8 @@
 {
   "tabWidth": 2,
   "singleQuote": true,
+  "printWidth": 120,
   "semi": true,
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "react-app",
-    "prettier"
-  ]
+  "jsxSingleQuote": true,
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "react-app", "prettier"]
 }

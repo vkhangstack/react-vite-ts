@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
+import App from './App';
 import Contact from './components/Contact';
 import Login from './components/KYC/Login';
+import './index.css';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login username="khangdev" password="khangdev" />,
+    element: <Login username='khangdev' password='khangdev' />,
   },
 ]);
 

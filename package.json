@@ -10,26 +10,30 @@
     "url": "https://phamvankhang.name.vn"
   },
   "scripts": {
-    "dev": "vite --port 8000",
+    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 8000"
+    "preview": "vite preview --port 9000"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.0",
     "antd": "^5.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1",
-    "umi-request": "^1.4.0"
+    "tailwindcss": "^3.3.2",
+    "umi-request": "^1.4.0",
+    "vite-plugin-package-version": "^1.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.14",
     "node-sass": "^8.0.0",
+    "postcss": "^8.4.23",
     "sass": "^1.57.1",
     "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "vite-plugin-singlefile": "^0.13.2"
+    "vite": "^4.0.0"
   }
 }

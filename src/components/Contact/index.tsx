@@ -14,8 +14,8 @@ class Contact extends React.Component<ContactProps, ContactState> {
     return (
       <Result
         icon={<SmileOutlined />}
-        title="Great, we have done all the operations!"
-        extra={<Button type="primary">Next</Button>}
+        title='Great, we have done all the operations!'
+        extra={<Button type='primary'>Next</Button>}
       />
     );
   }

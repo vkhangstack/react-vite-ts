@@ -4,7 +4,7 @@ react-vi-ts
 
 ## Technical
 
-> Node: **v18.12.1+**
+> Node: **v16.20.0**
 
 > Yarn: **1.22.19+**
 
